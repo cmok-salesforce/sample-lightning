@@ -1,0 +1,26 @@
+<aura:component>
+    <aura:attribute name="taskList" type="String[]"/>
+    <div class="slds-grid slds-gutters slds-grid_vertical-align-end">
+        <div class="slds-col">
+            <span>
+                <div class="slds-m-around_medium">
+
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="task-input">Task Name</label>
+                        <div class="slds-form-element__control">
+                            <input id="task-input" class="slds-input" type="text" value="" placeholder="Describe your task" />
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <div class="slds-col">
+            <span>
+                <div class="slds-m-around_medium">
+                    <!--c:TodoCreateTaskButton /-->
+                    <button class="slds-button slds-button_neutral" onclick="{!c.handleCreateTask}">Create Task</button>
+                </div>
+            </span>
+        </div>
+    </div>
+</aura:component>

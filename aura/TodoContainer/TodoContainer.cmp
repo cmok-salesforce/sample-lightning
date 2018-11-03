@@ -1,0 +1,9 @@
+<aura:component>
+    <aura:attribute name="tasks" type="String[]" default="['Learn Salesforce', 'Lear Apex', 'Lear Lightning']" />
+    <aura:handler event="c:TodoDeleteTask" action="{!c.handleDeleteTask}"/>
+    
+    <div class="slds-text-heading_large">Todo App</div>
+
+    <c:TodoCreateTaskContainer taskList="{!v.tasks}"/>
+    <c:TodoTaskContainer taskList="{!v.tasks}"/>
+</aura:component>
