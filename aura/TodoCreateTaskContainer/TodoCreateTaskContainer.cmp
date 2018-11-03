@@ -1,5 +1,5 @@
 <aura:component>
-    <aura:attribute name="taskList" type="String[]"/>
+    <aura:registerEvent name="createTask" type="c:TodoCreateTask"/>
     <div class="slds-grid slds-gutters slds-grid_vertical-align-end">
         <div class="slds-col">
             <span>
